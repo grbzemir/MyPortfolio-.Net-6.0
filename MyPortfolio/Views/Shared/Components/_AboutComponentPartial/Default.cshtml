@@ -1,15 +1,18 @@
-﻿<section id="about" class="s-about target-section">
+﻿@* @model List<MyPortfolio.Dal.Entities.About> *@
+
+<section id="about" class="s-about target-section">
 
     <div class="row narrow section-intro has-bottom-sep">
         <div class="col-full text-center">
             <h3>About Me</h3>
-            <h1>Who Am I</h1>
+            <h1>@ViewBag.aboutTitle</h1>
             <p class="lead">
-                Hello, I am Emircan Gürbüz, I am a 3nd year student of
+                @ViewBag.aboutSubDescription
+               @*  Hello, I am Emircan Gürbüz, I am a 3nd year student of
                 Software Developer. I am trying to improve myself in
                 the field of web programming. In addition, the languages ​​I
                 know are C, C++, C#, .NetCore, JavaScript, Html, Css, Bootsrapt ,
-                ReactJs , Tailwind Css , Python..
+                ReactJs , Tailwind Css , Python.. *@
             </p>
         </div>
     </div>
@@ -19,45 +22,7 @@
         <div class="col-six tab-full left">
             <h3>Hello!</h3>
 
-            <p>
-                I developed and maintained web applications using
-                ReactJs, JavaScript, HTML5 and CSS. I have a deep
-                experience in responsive design with TailwindCss, and I
-                optimized the user interface of various internal projects. I
-                developed RESTful APIs using C#, Entity Framework and
-                .NET Core, and implemented LINQ queries for data
-                retrieval.
-                I contributed to the design and deployment of MySQL
-                database solutions in collaboration with senior
-                developers, ensuring high performance and scalability. I
-                actively participated in code review processes, helping to
-                maintain coding standards and ensuring that the team
-                followed best practices.
-                I participated in sprint planning, daily stand-up meetings
-                and retrospectives within the framework of Agile Scrum
-                methodology, increasing the efficiency of the software
-                development process. I contributed to the development
-                and testing of software features, increasing the stability
-                of the software by 20% and reducing bug reports.
-            <p>
-                Within the scope of the PortalIntellium Project, I carried
-                out extensive work using C#, Entity Framework, .NET
-                Core and PostgreSQL to improve the user experience in
-                the Back End of the Expense Management system in
-                accordance with the Layered Architecture logic. During
-                this process, I made Back End developments with C# and
-                .NET to manage users' authorization parameters in the
-                system.
-                In the Front End part of the PortalIntellium Project, I
-                developed the user interface using React.js, Redux, React
-                Router DOM and ContextAPI. Using these technologies, I
-                integrated the C# and .NET codes I wrote in the Back End
-                and improved the user experience. During this process, I
-                gained in-depth knowledge and experience in application
-                state management with React.js and Redux, page
-                redirects with React Router DOM and data sharing across
-                the application with ContextAPI.
-            </p>
+            <p>@ViewBag.aboutDetail</p>
         </div>
 
         @await Component.InvokeAsync("_SkillComponentPartial")
