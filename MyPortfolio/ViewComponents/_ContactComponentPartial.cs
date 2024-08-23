@@ -5,10 +5,10 @@ namespace MyPortfolio.ViewComponents
 {
     public class _ContactComponentPartial:ViewComponent
     {
-		MyPortfolioContext portfolioContext = new MyPortfolioContext();
+		MyPortfolioContext context = new MyPortfolioContext();
 		public IViewComponentResult Invoke()
         {
-            var values = portfolioContext.Contacts.ToList();
+            var values = context.Contacts.ToList();
             return View(values);
         }
     }
