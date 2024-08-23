@@ -2,7 +2,7 @@
 
 namespace MyPortfolio.ViewComponents.LayoutViewComponents
 {
-	public class _LayoutSideBarComponentPartial:ViewComponent
+	public class _LayoutSideBarComponentPartial : ViewComponent
 	{
 		public IViewComponentResult Invoke()
 		{
