@@ -1,16 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyPortfolio.Dal.Context;
+using Newtonsoft.Json.Linq;
 
 namespace MyPortfolio.ViewComponents
 {
     public class _ExperienceComponentPartial:ViewComponent
     {
 
-        MyPortfolioContext portfolioContext = new MyPortfolioContext();
+        MyPortfolioContext context = new MyPortfolioContext();
         public IViewComponentResult Invoke()
         {
-            var values = portfolioContext.Experiences.ToList();
-            return View();
+            var values = context.Experiences.ToList();
+            return View(values);
         }
     }
 }
