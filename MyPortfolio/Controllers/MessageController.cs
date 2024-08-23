@@ -37,5 +37,11 @@ namespace MyPortfolio.Controllers
 			context.SaveChanges();
 			return RedirectToAction("Inbox");
 		}
+
+		public IActionResult MessageDetail(int id)
+		{
+			var value = context.Messages.Find(id);
+			return View("MessageDetail", value);
+		}
 	}
 }
