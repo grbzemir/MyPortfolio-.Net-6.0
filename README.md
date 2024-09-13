@@ -38,4 +38,4 @@ Ekran Görüntüleri
 ![Ekran görüntüsü 2024-09-13 113829](https://github.com/user-attachments/assets/93daec3d-5c4a-49b4-9be0-4ee34ae1f197)
 ![Ekran görüntüsü 2024-09-13 113836](https://github.com/user-attachments/assets/fed04313-c32e-4956-b39b-e2a62165cc24)
 ![Ekran görüntüsü 2024-09-13 113843](https://github.com/user-attachments/assets/b3142773-1f2a-4d87-b46a-c51b8e6b649d)
-![Ekran görüntüsü 2024-09-13 113851](https://github.com/user-attachments/assets/13ff6dc1-558a-4eb2-aa80-18e276679ffa)
+
